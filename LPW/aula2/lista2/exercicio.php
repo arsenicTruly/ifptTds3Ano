@@ -1,10 +1,10 @@
 <?php 
 $cabecalho = array("Ordem", "Pais", "Ouro", "Prata", "Bronze", "Total");
-$USA = array("1", "USA - Estados Unidos", "46", "37", "38", "121", "bandeiraUSA.jpg", "https://pt.wikipedia.org/wiki/Estados_Unidos");
-$GBR = array("2", "GBR - Gra-Bretanha", "27", "23", "12", "67", "bandeiraGBR.jpg", "https://pt.wikipedia.org/wiki/Grã-Bretanha");
-$CHN = array("3", "CHN - China", "26", "18", "26", "70", "bandeiraCHN.jpg", "https://pt.wikipedia.org/wiki/China");
-$RUS = array("4", "RUS - Russia", "19", "17", "20", "56", "bandeiraRUS.jpg", "https://pt.wikipedia.org/wiki/Russia");
-$GER = array("5", "GER - Alemanha", "17", "10", "15", "42", "bandeiraGER.jpg", "https://pt.wikipedia.org/wiki/Alemanha");
+$USA = array("1", "USA - Estados Unidos", "46", "37", "38", "121", "bandeiraUSA.svg", "https://pt.wikipedia.org/wiki/Estados_Unidos");
+$GBR = array("2", "GBR - Gra-Bretanha", "27", "23", "12", "67", "bandeiraGBR.svg", "https://pt.wikipedia.org/wiki/Grã-Bretanha");
+$CHN = array("3", "CHN - China", "26", "18", "26", "70", "bandeiraCHN.svg", "https://pt.wikipedia.org/wiki/China");
+$RUS = array("4", "RUS - Russia", "19", "17", "20", "56", "bandeiraRUS.svg", "https://pt.wikipedia.org/wiki/Russia");
+$GER = array("5", "GER - Alemanha", "17", "10", "15", "42", "bandeiraGER.svg", "https://pt.wikipedia.org/wiki/Alemanha");
 
 $tabela = array();
 array_push($tabela, $cabecalho, $USA, $GBR, $CHN, $RUS, $GER);
@@ -34,3 +34,4 @@ array_push($tabela, $cabecalho, $USA, $GBR, $CHN, $RUS, $GER);
         }
     ?>
 </table>
+
