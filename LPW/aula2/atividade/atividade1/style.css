@@ -1,0 +1,14 @@
+:root{
+    --cor-amarelo: rgb(249, 255, 70);
+    --cor-verde: rgb(79, 255, 70);
+} 
+
+table{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+}
