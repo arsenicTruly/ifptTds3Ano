@@ -1,4 +1,5 @@
-//versao que possui o colspan
+//processa ambos rowspan e colspan
+
 let tabelas = document.getElementsByTagName("tabela");
 
 for (let i = 0; i < tabelas.length; i++) {
