@@ -62,7 +62,9 @@ if($palpite && (is_numeric($palpite) || $palpite < 1 || $palpite > 100)){
         echo "<img src=" . $animalCorreto->getImagem().">";
         exit;
     }
-    }
+    } 
+    //TODO: implementar codigo em caso de erro (ex: dar dicas antes de rodar dnv)
+
     echo "que pena, voce errou!";
 }else{
     echo "insira seu palpite na uri (jogo.php?palpite=_)";
