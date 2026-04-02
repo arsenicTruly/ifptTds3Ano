@@ -19,11 +19,11 @@ for (let i = 0; i < tabelas.length; i++) {
     let matrizExpand = [];
 
     // Validar colspan e rowspan
-    for (let e = 0; e < expandTags.length; w++) {
+    for (let e = 0; e < expandTags.length; e++) {
         let lin = parseInt(expandTags[e].getAttribute("linha"));
         let col = parseInt(expandTags[e].getAttribute("coluna"));
         let tam = parseInt(expandTags[e].getAttribute("tamanho"));
-        let tipo = expandTags[e].getAttribute("tipo");
+        let tipo = expandTags[e].getAttribute("tipo").toLowerCase();
 
         if (tipo === "coluna" && col + tam > colunas) {
             console.error("Erro: colspan ultrapassa limite da tabela.");
@@ -43,12 +43,11 @@ for (let i = 0; i < tabelas.length; i++) {
     let dados = [];
 
     if (dadosTag) {
-        let texto = dadosTag.textContent.trim();
-        dados = texto.split("\n");
+        let linhasTexto = dadosTag.textContent.trim().split("|");
 
-        for (let linha of dados) {
-            let colunas = linha.split("|");
-            dados.push(colunas.map(c => c.trim()));
+        for (let linha of linhasTexto) {
+            let colunasLinha = linha.split("|").map(c => c.trim());
+            dados.push(colunasLinha);
         }
     }
 
