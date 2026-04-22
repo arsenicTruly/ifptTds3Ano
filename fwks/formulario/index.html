@@ -8,16 +8,20 @@
     <h1>Crie seu formulário</h1>
     <button type="button" onclick="novoCampo()">Novo campo</button>
     <button type="button" onclick="visualizarForm()">Concluir</button><hr>
-   <label for="rotulo0">Rótulo</label>
+    <label for="rotulo0">Rótulo</label>
     <input type="text" name="rotulo0">
-    <label for="tipo0">Tipo</label>
-    <select name="tipo0">
+    <label for="tipo0"> Tipo </label>
+    <select name="tipo0" onchange="toggleOpcoes(this, 0)">
         <option value="text">Texto</option>
         <option value="number">Número</option>
         <option value="date">Data</option>
         <option value="select">Opções</option>
+        <option value="textarea">Textarea</option>
     </select>
-<br>
+    <span id="opcoes-wrap0" style="display:none;">
+        <br>Opções (separadas por vírgula): <input type="text" name="opcoes0" placeholder="ex: sim,não,talvez">
+    </span>
+    <br>
 </form>
 <script src="script.js"></script>
 <iframe id="preview" style="width:100%; height:300px;"></iframe>
